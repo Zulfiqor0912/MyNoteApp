@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/app_navigation"
+    app:startDestination="@id/splashScreen">
+
+    <fragment
+        android:id="@+id/splashScreen"
+        android:name="uz.gita.b5mynoteapp.presentation.screen.splash.SplashScreen"
+        android:label="SplashScreen"
+        tools:layout="@layout/screen_splash">
+        <action
+            android:id="@+id/action_splashScreen_to_homeScreen"
+            app:destination="@id/homeScreen"
+            app:popUpTo="@id/splashScreen"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/homeScreen"
+        android:name="uz.gita.b5mynoteapp.presentation.screen.home.HomeScreen"
+        android:label="HomeScreen"
+        tools:layout="@layout/screen_home">
+        <action
+            android:id="@+id/action_homeScreen_to_trashScreen"
+            app:destination="@id/trashScreen" />
+        <action
+            android:id="@+id/action_homeScreen_to_archiveScreen"
+            app:destination="@id/archiveScreen" />
+        <action
+            android:id="@+id/action_homeScreen_to_sampleScreen"
+            app:destination="@id/sampleScreen" />
+        <action
+            android:id="@+id/action_homeScreen_to_infoScreen2"
+            app:destination="@id/infoScreen" />
+        <action
+            android:id="@+id/action_homeScreen_to_addScreen"
+            app:destination="@id/addScreen" />
+    </fragment>
+    <fragment
+        android:id="@+id/trashScreen"
+        android:name="uz.gita.b5mynoteapp.presentation.screen.trash.TrashScreen"
+        android:label="TrashScreen"
+        tools:layout="@layout/screen_trash" />
+    <fragment
+        android:id="@+id/addScreen"
+        android:name="uz.gita.b5mynoteapp.presentation.screen.add.AddScreen"
+        android:label="AddScreen"
+        tools:layout="@layout/screen_add_note"/>
+    <fragment
+        android:id="@+id/archiveScreen"
+        android:name="uz.gita.b5mynoteapp.presentation.screen.archive.ArchiveScreen"
+        android:label="screen_archive"
+        tools:layout="@layout/screen_archive" />
+    <fragment
+        android:id="@+id/sampleScreen"
+        android:name="uz.gita.b5mynoteapp.presentation.screen.sample.SampleScreen"
+        android:label="SampleScreen"
+        tools:layout="@layout/screen_note">
+        <action
+            android:id="@+id/action_sampleScreen_to_editNoteScreen"
+            app:destination="@id/editNoteScreen" />
+        <argument
+            android:name="note"
+            app:argType="uz.gita.b5mynoteapp.data.local.entity.NoteEntity" />
+    </fragment>
+    <fragment
+        android:id="@+id/editNoteScreen"
+        android:name="uz.gita.b5mynoteapp.presentation.screen.edit.EditNoteScreen"
+        android:label="EditNoteScreen"
+        tools:layout="@layout/screen_edit">
+        <argument
+            android:name="note"
+            app:argType="uz.gita.b5mynoteapp.data.local.entity.NoteEntity" />
+        <action
+            android:id="@+id/action_editNoteScreen_to_homeScreen"
+            app:destination="@id/homeScreen"
+            app:popUpTo="@id/homeScreen"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/infoScreen"
+        android:name="uz.gita.b5mynoteapp.presentation.screen.info.InfoScreen"
+        android:label="InfoScreen"
+        tools:layout="@layout/screen_info" />
+</navigation>

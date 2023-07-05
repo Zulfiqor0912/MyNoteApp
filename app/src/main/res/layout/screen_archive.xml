@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".presentation.screen.archive.ArchiveScreen">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/button_back_archive"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        android:padding="6dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:src="@drawable/baseline_arrow_back_24"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="6dp"
+        android:text="Archive"
+        android:textColor="@color/title_back"
+        android:textSize="24sp"
+        app:layout_constraintHorizontal_bias="0.2"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/button_back_archive"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/button_back_archive"
+        app:layout_constraintTop_toTopOf="@+id/button_back_archive" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_archive"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="22dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/button_back_archive"
+        tools:itemCount="8"
+        tools:listitem="@layout/item_note_archive"
+        app:layoutManager="androidx.recyclerview.widget.StaggeredGridLayoutManager"
+        app:spanCount="2"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

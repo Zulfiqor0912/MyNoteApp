@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+    <item
+        android:id="@+id/trashScreen"
+        android:icon="@drawable/baseline_auto_delete_24"
+        android:title="Trash"
+        app:showAsAction="withText" />
+    <item
+        android:id="@+id/archiveScreen"
+        android:icon="@drawable/baseline_archive_24"
+        android:title="Archive"
+        app:showAsAction="withText" />
+    <item
+        android:id="@+id/infoScreen"
+        android:icon="@drawable/baseline_info_24"
+        android:title="Info"
+        app:showAsAction="withText" />
+    <item
+        android:id="@+id/rating"
+        android:icon="@drawable/baseline_star_24"
+        android:title="Rating"
+        app:showAsAction="withText" />
+    <item
+        android:id="@+id/exit"
+        android:icon="@drawable/baseline_exit_to_app_24"
+        android:title="Exit" />
+
+</menu>

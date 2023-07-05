@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="258dp"
+        android:layout_height="306dp"
+        android:background="@drawable/bg_color_dialog"
+        android:elevation="4dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/text_change_color"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="12dp"
+            android:text="Change color"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/color_white"
+            android:layout_width="70dp"
+            android:layout_height="34dp"
+            android:layout_marginTop="24dp"
+            android:clickable="true"
+            android:background="@drawable/bg_white"
+            android:focusable="true"
+            app:layout_constraintEnd_toStartOf="@id/color_red"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/text_change_color" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/color_red"
+            android:layout_width="70dp"
+            android:layout_height="34dp"
+            android:layout_marginTop="24dp"
+            android:clickable="true"
+            android:background="@drawable/bg_red"
+            android:focusable="true"
+            app:layout_constraintEnd_toStartOf="@id/color_orange"
+            app:layout_constraintStart_toEndOf="@+id/color_white"
+            app:layout_constraintTop_toBottomOf="@id/text_change_color" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/color_orange"
+            android:layout_width="70dp"
+            android:layout_height="34dp"
+            android:layout_marginTop="24dp"
+            android:clickable="true"
+            android:background="@drawable/bg_orange"
+            android:focusable="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/color_red"
+            app:layout_constraintTop_toBottomOf="@id/text_change_color" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/color_yellow"
+            android:layout_width="70dp"
+            android:layout_height="34dp"
+            android:background="@drawable/bg_yellow"
+            android:layout_marginTop="24dp"
+            app:layout_constraintEnd_toEndOf="@+id/color_white"
+            app:layout_constraintStart_toStartOf="@+id/color_white"
+            app:layout_constraintTop_toBottomOf="@+id/color_white" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/color_green"
+            android:layout_width="70dp"
+            android:layout_height="34dp"
+            android:background="@drawable/bg_green"
+            android:layout_marginTop="24dp"
+            app:layout_constraintEnd_toEndOf="@+id/color_red"
+            app:layout_constraintStart_toStartOf="@+id/color_red"
+            app:layout_constraintTop_toBottomOf="@+id/color_white" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/color_blue"
+            android:layout_width="70dp"
+            android:layout_height="34dp"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/bg_blue"
+            app:layout_constraintEnd_toEndOf="@+id/color_orange"
+            app:layout_constraintStart_toStartOf="@+id/color_orange"
+            app:layout_constraintTop_toBottomOf="@+id/color_white" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/color_purple"
+            android:layout_width="70dp"
+            android:layout_height="34dp"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/bg_purple"
+            app:layout_constraintEnd_toEndOf="@+id/color_yellow"
+            app:layout_constraintStart_toStartOf="@+id/color_white"
+            app:layout_constraintTop_toBottomOf="@+id/color_yellow" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/color_500"
+            android:layout_width="70dp"
+            android:layout_height="34dp"
+            android:background="@drawable/bg_500"
+            android:layout_marginTop="24dp"
+            app:layout_constraintEnd_toEndOf="@+id/color_green"
+            app:layout_constraintStart_toStartOf="@+id/color_green"
+            app:layout_constraintTop_toBottomOf="@+id/color_green" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/color_1"
+            android:layout_width="70dp"
+            android:layout_height="34dp"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/bg_purple2"
+            app:layout_constraintStart_toStartOf="@+id/color_white"
+            app:layout_constraintTop_toBottomOf="@+id/color_purple" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/color_purple2"
+            android:layout_width="70dp"
+            android:layout_height="34dp"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/bg_purple12"
+            app:layout_constraintEnd_toEndOf="@+id/color_blue"
+            app:layout_constraintStart_toStartOf="@+id/color_blue"
+            app:layout_constraintTop_toBottomOf="@+id/color_blue" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/color_2"
+            android:layout_width="70dp"
+            android:layout_height="34dp"
+            android:background="@drawable/bg_2"
+            android:layout_marginTop="24dp"
+            app:layout_constraintEnd_toEndOf="@+id/color_500"
+            app:layout_constraintStart_toStartOf="@+id/color_500"
+            app:layout_constraintTop_toBottomOf="@+id/color_500" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/color_3"
+            android:layout_width="70dp"
+            android:layout_height="34dp"
+            android:background="@drawable/bg_3"
+            android:layout_marginTop="24dp"
+            app:layout_constraintEnd_toEndOf="@+id/color_purple2"
+            app:layout_constraintStart_toStartOf="@+id/color_purple2"
+            app:layout_constraintTop_toBottomOf="@+id/color_purple2" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Note</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <style name="nunito_title">
+        <item name="fontFamily">@raw/nunito_semi_bold</item>
+
+    </style>
+
+    <style name="nunito_italic">
+        <item name="fontFamily">@raw/nunito_italic</item>
+    </style>
+
+    <style name="nunito_bold">
+        <item name="fontFamily">@raw/nunito_bold</item>
+    </style>
+</resources>

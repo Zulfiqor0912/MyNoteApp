@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="176dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_yellow"
+    android:id="@+id/item_note_archive"
+    android:layout_margin="6dp"
+    android:elevation="4dp">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/text_title_trash"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="14dp"
+        android:text="Hello  World"
+        android:lineSpacingExtra="4dp"
+        android:textColor="#A9000000"
+        android:textSize="18sp"
+        style="@style/nunito_bold"
+        app:layout_constraintBottom_toTopOf="@id/line1"
+        app:layout_constraintEnd_toStartOf="@+id/image_trash"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/image_trash"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:padding="3dp"
+        android:src="@drawable/baseline_restore_from_trash_24"
+        android:background="?selectableItemBackgroundBorderless"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/line1"
+        android:layout_width="0dp"
+        android:layout_height="0.6dp"
+        android:background="#72000000"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@id/text_title_trash"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/text_date_trash" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/text_date_trash"
+        android:layout_width="124dp"
+        android:layout_height="36dp"
+        android:layout_margin="8dp"
+        android:text="12/342002"
+        style="@style/nunito_italic"
+        android:textColor="#6A000000"
+        android:gravity="end|center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/line1"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
